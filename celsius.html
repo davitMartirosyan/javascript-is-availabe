@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c_f{
+            display:flex;
+            max-width:700px;
+            justify-content:space-between;
+            align-items:center;
+            margin:0 auto;
+        }
+        .c_f > .t{
+            border:1px solid rgb(52, 120, 209);
+            width:300px;
+            height:200px;
+            font-size:8rem;
+            text-align: center;
+            outline:none;
+            transition: .3s;;
+        }
+        .t:focus{
+            border:3px solid rgb(52, 120, 209);
+        }
+        .replace{
+            border:0;
+            background-color:rgb(40, 119, 209);
+            width:50px;
+            height:50px;
+            color:#fff;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="c_f">
+        <input type="text" class="t" data-role="c" placeholder="&#8451;"/>
+        <button class="replace">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.25 4.75L8.75 7L11.25 9.25"></path>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.75 19.25L15.25 17L12.75 14.75"></path>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 7H13.25C16.5637 7 19.25 9.68629 19.25 13V13.25"></path>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.25 17H10.75C7.43629 17 4.75 14.3137 4.75 11V10.75"></path>
+          </svg>
+        </button>
+        <input  type="text" class="t" data-role="f" placeholder="&#x2109;"/>
+    </div>
+    <script src="celsius.js"></script>
+</body>
+</html>
